@@ -1,0 +1,13 @@
+[client]
+remote_addr = "127.0.0.1:8000:
+default_token = "token"
+
+[client.services.ssh1]
+local_addr = "127.0.0.1:22"
+
+[client.services.https]
+local_addr = "127.0.0.1:443"
+
+[client.services.http]
+local_addr = "127.0.0.1:80"
+

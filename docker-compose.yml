@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  rathole:
+    container_name: rathole
+    image: rapiz1/rathole:latest
+    network_mode: host
+    volumes:
+      - ./config.toml:/app/config.toml
+    command: ["--client", "/app/config.toml"]
+    restart: always
+
